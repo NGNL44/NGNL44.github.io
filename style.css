@@ -12,6 +12,43 @@ body {
   line-height: 1.5;
   background-color: #d6dcdd;
 }
+body.dark {
+  background-color: #1e1e1e; 
+  color: #f0f0f0; 
+}
+
+#header.dark {
+  background-color: #0f4c75; 
+}
+
+.navBar a {
+  color: black;
+}
+
+body.dark .navBar a {
+  color: white;
+}
+
+#theme-toggle {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #0070c0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body.dark #theme-toggle {
+  background-color: #005f9e;
+  color: #e0e0e0;
+}
+
+/* Smooth theme switching */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
 a {
   color: #0070c0;
